@@ -1,0 +1,15 @@
+.navbar {
+  width: 100%;
+  background-color: rgb(189, 167, 70);
+  list-style: none;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.navbar-style {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
