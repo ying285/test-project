@@ -1,0 +1,231 @@
+$primary-font-color: #939393;
+$primary-color: #fed614;
+
+.dashbord__grid {
+  background: #f7f7f7;
+  background-image: linear-gradient(#e6e6e6 1px, transparent 0),
+    linear-gradient(90deg, #e6e6e6 1px, transparent 0);
+  background-size: 113px 113px, 113px 113px;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.dashbord__systemAdmin {
+  height: 100vh;
+  width: 30%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  border-radius: 10% 0 0 0;
+}
+
+.dashbord__flow {
+  &__deleteBg {
+    background-color: #fff !important;
+  }
+
+  &__openBlock {
+    background-color: #383838;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    color: #fff;
+
+    border-radius: 15px;
+    padding: 0.8rem;
+    width: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  }
+  &__block {
+    background-color: #fff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 0.5rem;
+    width: 5rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__open {
+    position: absolute;
+    top: 22%;
+    left: 30.5%;
+  }
+
+  &__checkcv {
+    position: absolute;
+    top: 38%;
+    left: 22.5%;
+
+    i {
+      color: $primary-color;
+    }
+  }
+
+  &__interview__delete {
+    filter: opacity(25%);
+  }
+
+  &__interview {
+    position: absolute;
+    top: 38%;
+    left: 37%;
+    display: flex;
+
+    &__extraIcons {
+      margin-left: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &__place {
+        visibility: hidden;
+      }
+
+      div {
+        margin-left: 1rem;
+        border-radius: 13px;
+        background-color: red;
+        padding: 0.5rem 0.8rem;
+        color: #fff;
+        font-size: 0.9rem;
+      }
+
+      i {
+        font-size: 1.3rem;
+
+        filter: opacity(35%);
+      }
+
+      .bi-trash3 {
+        color: red;
+      }
+    }
+  }
+
+  &__test {
+    position: absolute;
+    top: 60%;
+    left: 31.5%;
+
+    i {
+      color: red;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 82%;
+    left: 30.5%;
+  }
+}
+
+.dashbord__flow__line1 {
+  position: absolute;
+  top: 31.5%;
+  left: 21.5%;
+
+  path {
+    stroke-width: 1px;
+    stroke: grey;
+    fill: none;
+    stroke-dasharray: 7 3;
+  }
+}
+
+.bi-chevron-down-2 {
+  font-size: 1rem;
+
+  position: absolute;
+  top: 35.7%;
+  left: 24.7%;
+}
+
+.dashbord__flow__line2 {
+  position: absolute;
+  top: 45%;
+  left: 28%;
+  path {
+    stroke-width: 3px;
+    stroke: grey;
+    stroke-dasharray: 7 3;
+  }
+}
+
+.bi-chevron-right {
+  font-size: 1rem;
+
+  position: absolute;
+  top: 43.7%;
+  left: 35.9%;
+}
+
+.dashbord__flow__line3 {
+  position: absolute;
+  top: 51.2%;
+  left: 27%;
+  fill: none;
+
+  path {
+    stroke-width: 2px;
+    stroke: blue;
+    stroke-dasharray: 7 3;
+  }
+}
+
+.bi-chevron-down-3 {
+  font-size: 1rem;
+  position: absolute;
+  top: 57.5%;
+  left: 33.4%;
+  color: blue;
+}
+
+.dashbord__flow__line4 {
+  position: absolute;
+  top: 72.5%;
+  left: 33.5%;
+
+  path {
+    stroke-width: 2px;
+    stroke: grey;
+    stroke-dasharray: 7 3;
+  }
+}
+
+.bi-chevron-down-1 {
+  font-size: 1rem;
+
+  position: absolute;
+  top: 79.5%;
+  left: 33.6%;
+}
+
+.bg {
+  background-color: blue;
+  color: #fff;
+
+  i {
+    color: #fff !important;
+  }
+}

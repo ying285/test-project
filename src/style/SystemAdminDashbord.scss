@@ -1,0 +1,156 @@
+$primary-font-color: #939393;
+$primary-color: #fed614;
+
+.systemAdminDashbord {
+  position: relative;
+
+  &__user {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: -3.5rem;
+    right: 6rem;
+  }
+  p {
+    margin-left: 1rem;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: 5.8rem 0 0 5rem;
+
+    p {
+      margin: 0;
+      color: #c2c0c0;
+      font-size: 1rem;
+    }
+  }
+  &__description {
+    margin: 1rem 0 1rem 5rem;
+
+    p:first-child {
+      color: #c2c0c0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  button {
+    background-color: $primary-color;
+    margin: 0.7rem 0 0 5rem;
+    padding: 0.7rem 7rem;
+    border: 0;
+    border-radius: 10px;
+    font-size: 0.9rem;
+  }
+
+  &__search {
+    display: flex;
+    align-items: baseline;
+    margin-top: 5rem;
+
+    h5 {
+      font-size: 1rem;
+      margin: 0 4rem 2rem 5rem;
+    }
+
+    input {
+      border: 0;
+      border-bottom: 1px solid;
+      width: 95%;
+      color: #c2c0c0;
+      font-size: 0.8rem;
+
+      &::placeholder {
+        color: #c2c0c0;
+      }
+    }
+
+    i {
+      color: $primary-font-color;
+      margin-left: -1rem;
+      font-size: 1.2rem;
+      color: #c2c0c0;
+    }
+  }
+
+  &__flow {
+    width: 83%;
+
+    p {
+      margin-left: 6rem;
+    }
+  }
+
+  // &__flow::after {
+  //   content: "my";
+  //   position: absolute;
+
+  //   right: 0;
+  //   bottom: 0;
+  //   transform: rotateX(90deg);
+  //   height: 3px;
+  //   background: linear-gradient(
+  //     to bottom,
+  //     #ed8034 0%,
+  //     #ed8034 33%,
+  //     #feb123 33%,
+  //     #feb123 66%,
+  //     #2184cd 66%,
+  //     #2184cd 100%
+  //   );
+  // }
+
+  &__flow__card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem 0 0 6rem;
+  }
+
+  &__flow__card__item {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
+    border-radius: 15px;
+    width: 5rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 0.5rem 0.5rem 0;
+
+    i {
+      font-size: 1.5rem;
+      color: blue;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.systemAdminDashbord__line1 {
+  position: absolute;
+
+  top: 21.5rem;
+  left: 24.5rem;
+}
+
+.systemAdminDashbord__line2 {
+  position: absolute;
+  top: 25rem;
+  left: 24.4rem;
+}
+
+.systemAdminDashbord__line3 {
+  position: absolute;
+  top: 32rem;
+  left: 24.5rem;
+}

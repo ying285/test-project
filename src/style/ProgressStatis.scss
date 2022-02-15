@@ -1,0 +1,63 @@
+$primary-font-color: #939393;
+
+.progressStatis {
+  height: 60%;
+  display: flex;
+  padding: 5rem;
+
+  &__main {
+    width: 72%;
+  }
+
+  &__sub {
+    width: 28%;
+
+    h5 {
+      text-align: end;
+      font-size: 1rem;
+      margin-right: 0.9rem;
+      color: #c2c0c0;
+    }
+
+    &__card {
+      width: 16rem;
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
+      i {
+        margin: 0 2rem 0 1.3rem;
+        font-size: 1.5rem;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      p:first-child {
+        font-weight: 700;
+        font-size: 1.1rem;
+      }
+
+      p:not(:first-child) {
+        color: #c2c0c0;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+.bi-check-circle {
+  color: blue;
+}
+
+.bi-x-circle {
+  color: red;
+}
+
+.bi-circle {
+  color: $primary-font-color;
+}

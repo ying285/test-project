@@ -1,0 +1,80 @@
+$svgLine-color: rgb(223, 223, 223);
+
+.authWelcomeLine {
+  &__line1 {
+    position: absolute;
+    top: 0;
+    left: 5%;
+
+    path {
+      stroke-width: 2px;
+      stroke: $svgLine-color;
+      fill: none;
+    }
+  }
+
+  &__line2 {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    z-index: 0;
+
+    path {
+      stroke-width: 2px;
+      stroke: $svgLine-color;
+      fill: none;
+    }
+  }
+
+  &__line3 {
+    position: absolute;
+    top: 23%;
+    left: 26.5%;
+    z-index: 0;
+
+    path {
+      stroke-width: 2px;
+      stroke: $svgLine-color;
+      fill: none;
+    }
+  }
+
+  &__line4 {
+    position: absolute;
+    top: 75%;
+    left: -7%;
+    z-index: 0;
+
+    path {
+      stroke-width: 2px;
+      stroke: $svgLine-color;
+      fill: none;
+    }
+  }
+
+  &__line5 {
+    position: absolute;
+    top: 82%;
+    left: 5%;
+    z-index: 0;
+
+    path {
+      stroke-width: 2px;
+      stroke: $svgLine-color;
+      fill: none;
+    }
+  }
+
+  &__line6 {
+    position: absolute;
+    top: 92%;
+    left: 40%;
+    z-index: 0;
+
+    path {
+      stroke-width: 2px;
+      stroke: $svgLine-color;
+      fill: none;
+    }
+  }
+}

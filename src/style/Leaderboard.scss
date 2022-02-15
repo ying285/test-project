@@ -1,0 +1,112 @@
+$primary-font-color: #939393;
+$primary-color: #fed614;
+
+.leaderboard {
+  height: 40%;
+  padding: 1rem 0 0 5rem;
+  font-size: 0.7rem;
+  margin-top: -1rem;
+
+  &__title {
+    p {
+      color: #c2c0c0;
+    }
+  }
+
+  &__main {
+    display: flex;
+  }
+
+  &__main__card {
+    display: flex;
+    margin-right: 3rem;
+  }
+
+  &__main__card__title {
+    p:first-child {
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-align: center;
+      color: black;
+    }
+
+    p {
+      text-align: center;
+      margin: 0;
+      color: #c2c0c0;
+      font-size: 0.8rem;
+    }
+  }
+
+  &__main__card__item {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    padding-top: 1.8rem;
+    width: 9rem;
+    height: 100%;
+    border-radius: 10px;
+    margin-right: 1.2rem;
+
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+
+  &__main__card__name {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  &__main__card__buttom {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+    color: #c2c0c0;
+  }
+
+  &__main__chart {
+    font-size: 0.9rem;
+    margin-left: 2rem;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__main__chart__item {
+    display: flex;
+    margin-top: 0.8rem;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    padding-left: 1rem;
+
+    p {
+      margin-right: 1rem;
+    }
+
+    span:first-child {
+      margin-right: 8rem;
+    }
+
+    &__span {
+      border-right: 1px solid #c2c0c0;
+      padding: 0 2rem 0 0;
+
+      span:not(:first-child) {
+        color: #c2c0c0;
+      }
+
+      &__58 {
+        border-right: 3px solid #c2c0c0;
+        padding-right: 1.9rem;
+      }
+    }
+  }
+  hr {
+    margin: 0.5rem 0 0 4rem;
+    border: 0;
+    height: 5px;
+    background: linear-gradient(to right, #fdd301 80%, #c2c0c0 20%);
+  }
+}

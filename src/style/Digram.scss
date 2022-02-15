@@ -1,0 +1,108 @@
+.digram {
+  height: 13.5rem;
+  padding: 1rem 1rem 1rem 0;
+  position: relative;
+  color: #c2c0c0;
+
+  &__numberCard {
+    background-color: #fff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 2rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 63%;
+
+    p {
+      font-size: 0.7rem;
+      margin: 0.15rem;
+      color: red;
+    }
+
+    p:first-child {
+      color: blue;
+    }
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+
+  &__line {
+    height: 0.5px;
+    background-color: #c2c0c0;
+    width: 95%;
+    margin-bottom: 0.9rem;
+  }
+
+  &__line6 {
+    height: 1px;
+    background-color: #c2c0c0;
+    transform: rotate(90deg);
+    width: 12rem;
+    position: absolute;
+    top: 46%;
+    left: 49%;
+  }
+
+  &__stepData {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0.3rem;
+
+    span {
+      font-size: 0.6rem;
+      color: #c2c0c0;
+    }
+
+    p {
+      font-size: 0.8rem;
+      margin: 0;
+    }
+
+    &__step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__svgLine1 {
+    position: absolute;
+    top: 31%;
+    left: 19.2%;
+
+    path {
+      stroke-width: 2px;
+      stroke: blue;
+    }
+  }
+
+  &__svgLine2 {
+    position: absolute;
+    top: 35%;
+    left: 19.2%;
+
+    path {
+      stroke-width: 2px;
+      stroke: red;
+    }
+  }
+
+  &__svgLine3 {
+    position: absolute;
+    top: 23%;
+    left: 19.2%;
+
+    path {
+      stroke-width: 1px;
+      stroke: #c2c0c0;
+      stroke-dasharray: 7 3;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+$primary-font-color: #939393;
+$primary-color: #fed614;
+
+.openVacancies {
+  margin-top: 3rem;
+
+  &__title {
+    display: flex;
+    align-items: baseline;
+
+    h5 {
+      font-size: 1rem;
+      margin: 0 2rem 2rem 5rem;
+    }
+
+    input {
+      border: 0;
+      border-bottom: 1px solid;
+      width: 98%;
+      color: #c2c0c0;
+      font-size: 0.8rem;
+
+      &::placeholder {
+        color: #c2c0c0;
+      }
+    }
+
+    i {
+      color: #c2c0c0;
+      margin-left: -1.2rem;
+      font-size: 1.2rem;
+    }
+  }
+  &__openJob {
+    display: flex;
+    align-items: center;
+    margin: 0 0 1rem 5rem;
+    border-right: 2px solid #c2c0c0;
+    width: 64%;
+    font-size: 0.9rem;
+
+    &__step4 {
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      border-right: none;
+      width: 70%;
+      border-radius: 10px;
+      padding: 0.3rem 0;
+
+      i {
+        color: $primary-color;
+      }
+    }
+
+    &__step5 {
+      border-right: none;
+    }
+
+    &__special {
+      border-right: 5px solid $primary-color;
+      width: 81%;
+    }
+
+    i {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__user {
+    p {
+      margin: 0 0 0 0.5rem;
+    }
+
+    p:not(:first-child) {
+      color: #c2c0c0;
+    }
+  }
+
+  button {
+    background-color: $primary-color;
+    margin: 0.7rem 0 0 5rem;
+    padding: 0.7rem 6.5rem;
+    border: 0;
+    border-radius: 10px;
+    font-size: 0.9rem;
+  }
+}

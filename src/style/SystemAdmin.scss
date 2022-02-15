@@ -1,0 +1,105 @@
+$primary-font-color: #939393;
+$primary-color: #fed614;
+
+.systemAdmin {
+  position: relative;
+  &__user {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 10000;
+    top: -3.5rem;
+    right: 6rem;
+  }
+  p {
+    margin-left: 1rem;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5.8rem 0 0 5rem;
+
+    p {
+      margin: 0;
+      color: #c2c0c0;
+      font-size: 1rem;
+    }
+  }
+
+  &__border {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
+    width: 64%;
+    margin: 0.5rem 0 0 5rem;
+    border-radius: 5%;
+    color: $primary-font-color;
+
+    padding: 1rem;
+
+    p {
+      font-size: 0.8rem;
+      margin: 0;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+  }
+
+  &__title__border {
+    display: flex;
+    justify-content: space-evenly;
+    .item {
+      align-self: center;
+    }
+  }
+
+  &__line {
+    width: 15%;
+
+    hr {
+      height: 2px;
+    }
+  }
+
+  &__round {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+
+    &__roundItem {
+      height: 5px;
+      width: 5px;
+      background-color: $primary-font-color;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
+  }
+  .black__item {
+    background-color: black;
+  }
+
+  &__buttom {
+    display: flex;
+
+    margin: 1rem 0 2rem 5rem;
+    font-size: 0.9rem;
+
+    button {
+      background-color: $primary-color;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 10px;
+      margin-right: 3.3rem;
+    }
+
+    p {
+      align-self: flex-end;
+    }
+  }
+}

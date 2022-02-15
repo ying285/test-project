@@ -1,0 +1,70 @@
+$primary-color: #fed614;
+
+.authMain {
+  width: 72%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cccccc;
+
+  h3 {
+    color: #575757;
+    margin-bottom: 1.5rem;
+  }
+
+  &__form {
+    margin-top: 2rem;
+    &__addColor {
+      color: $primary-color;
+    }
+
+    &__part {
+      margin-top: 0.5rem;
+      label {
+        display: block;
+      }
+      input {
+        margin-bottom: 0.9rem;
+        border: none;
+        border-bottom: 1px solid #cccc;
+        margin-top: 0.3rem;
+        padding: 0.5rem 15rem 0.5rem 0;
+        outline: none;
+
+        &::placeholder {
+          color: #cccccc;
+        }
+      }
+    }
+  }
+
+  .bi {
+    font-size: 1.5rem;
+    margin-left: -1.5rem;
+  }
+
+  .authMain__form__part input:focus {
+    &::placeholder {
+      color: black;
+    }
+  }
+
+  button {
+    background-color: $primary-color;
+    border: 0;
+    padding: 0.5rem 12rem;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #f5eb60;
+    }
+
+    &:active {
+      transform: translateY(3px);
+    }
+  }
+}

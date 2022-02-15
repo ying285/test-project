@@ -1,0 +1,72 @@
+.authWelcome {
+  background-color: #fed614;
+  width: 28%;
+  border-radius: 0 5% 0 0;
+  position: relative;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+  &__logo {
+    font-size: 3rem;
+    font-weight: 900;
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+    z-index: 100;
+  }
+
+  &__mainText {
+    position: absolute;
+    top: 14rem;
+    left: 4rem;
+    z-index: 100;
+
+    p:first-child {
+      margin-bottom: 4rem;
+      font-size: 1.4rem;
+      margin-top: 2.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      line-height: 0.5rem;
+    }
+
+    span {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+  }
+}
+
+.subText {
+  margin-top: 2rem;
+  z-index: 100;
+  p {
+    font-size: 0.9rem !important;
+    margin: 1rem 0 !important;
+    letter-spacing: 0.5px;
+    line-height: 0;
+    color: #9e9b9b;
+  }
+}
+
+.WelcomeBtn {
+  margin-top: 2.5rem;
+  width: 100%;
+  padding: 0.5rem 8rem;
+  background-color: #383838;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+  outline: none;
+
+  &:hover {
+    background-color: #818181;
+  }
+
+  &:active {
+    transform: translateY(3px);
+  }
+}
