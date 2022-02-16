@@ -1,4 +1,3 @@
-import React from "react";
 import "../../style/Navbar.scss";
 import { NavLink } from "react-router-dom";
 
@@ -28,7 +27,7 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/#">Testings</NavLink>
+          <NavLink to="/*">Testings</NavLink>
         </li>
       </ul>
     </div>

@@ -1,0 +1,39 @@
+$sub-font-color: #c2c0c0;
+
+.leaderboardTotal {
+  height: 40%;
+  padding: 1rem 0 0 5rem;
+  font-size: 0.7rem;
+  margin-top: -1rem;
+  display: flex;
+
+  &__title {
+    p {
+      color: $sub-font-color;
+    }
+  }
+
+  &__leaderboard__layout {
+    display: flex;
+  }
+}
+
+.leaderboard2 {
+  padding: 4rem;
+
+  &__title {
+    font-size: 0.9rem;
+    color: $sub-font-color;
+
+    p {
+      padding-left: 1rem;
+    }
+  }
+
+  &__items {
+    margin-top: 0.8rem;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    padding-left: 1rem;
+  }
+}

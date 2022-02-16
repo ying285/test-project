@@ -1,5 +1,6 @@
 $primary-font-color: #939393;
 $primary-color: #fed614;
+$sub-font-color: #c2c0c0;
 
 .systemAdmin {
   position: relative;
@@ -34,7 +35,7 @@ $primary-color: #fed614;
     width: 64%;
     margin: 0.5rem 0 0 5rem;
     border-radius: 5%;
-    color: $primary-font-color;
+    color: $sub-font-color;
 
     padding: 1rem;
 

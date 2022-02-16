@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface dashbordState {
   isLogin: boolean;
@@ -20,12 +20,24 @@ const loginSlice = createSlice({
   name: "login",
   initialState,
   reducers: {
-    login(state) {
-      state.token = localStorage.getItem("token");
-      if (state.token) {
+    login(state, actions: PayloadAction<any>) {
+      state.token = actions.payload;
+
+      if (state.token === undefined) {
+        alert("please enter a correct password or usename");
+        state.isLogin = false;
+      }
+
+      if (state.token !== undefined) {
         state.isLogin = true;
       }
     },
+
+    logout(state) {
+      localStorage.removeItem("token");
+      state.isLogin = false;
+    },
+
     loadingHandler(state) {
       state.isLoading = !state.isLoading;
     },

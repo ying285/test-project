@@ -1,4 +1,3 @@
-import React from "react";
 import "../../style/FunnelStatis.scss";
 import "../../style/Vacancies.scss";
 import ProgressStatis from "./ProgressStatis";

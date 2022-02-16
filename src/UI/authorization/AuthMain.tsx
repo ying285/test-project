@@ -9,6 +9,10 @@ const AuthMain = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const isLogin = useSelector((state: RootState) => state.login.isLogin);
+  console.log(isLogin);
+
+  const token = useSelector((state: RootState) => state.login.token);
+  console.log(token);
   const changeMailColor = useSelector(
     (state: RootState) => state.login.changeMailColor
   );
@@ -54,9 +58,11 @@ const AuthMain = () => {
           dispatch(loginActions.loadingHandler());
 
           localStorage.setItem("token", responseData.token);
-          dispatch(loginActions.login());
+          dispatch(loginActions.login(responseData.token));
 
-          isLogin && navigate("/statistics");
+          if (isLogin) {
+            navigate("/statistics");
+          }
         } catch (err: string | any) {
           alert(err.message);
         }
@@ -75,7 +81,7 @@ const AuthMain = () => {
             type="text"
             placeholder="example@example.com"
             ref={inputEmailRef}
-            onClick={addEmailColorHandler}
+            onChange={addEmailColorHandler}
             onBlur={addEmailColorHandler}
           />
           <i
@@ -91,7 +97,7 @@ const AuthMain = () => {
             type="text"
             placeholder="*******"
             ref={inputPasswordRef}
-            onClick={addPassColorHandler}
+            onChange={addPassColorHandler}
             onBlur={addPassColorHandler}
           />
           <i

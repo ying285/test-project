@@ -12,7 +12,6 @@ const ProgressStatis = () => {
   }
 
   const funnelStatic: obj | any = DataAllFetch(url);
-  console.log(funnelStatic);
 
   return (
     <div className="progressStatis">
@@ -29,21 +28,24 @@ const ProgressStatis = () => {
         <div className="progressStatis__sub__card">
           <i className="bi bi-check-circle" />
           <div>
-            <p>{funnelStatic.passed}</p>
+            {funnelStatic && <p>{funnelStatic.passed} </p>}
+            {!funnelStatic && <p>77</p>}
             <p>passed</p>
           </div>
         </div>
         <div className="progressStatis__sub__card">
           <i className="bi bi-x-circle" />
           <div>
-            <p>{funnelStatic.unsuccessful}</p>
+            {funnelStatic && <p>{funnelStatic.passed} </p>}
+            {!funnelStatic && <p>707</p>}
             <p>unsuccessful</p>
           </div>
         </div>
         <div className="progressStatis__sub__card">
           <i className="bi bi-circle" />
           <div>
-            <p>{funnelStatic.overall}</p>
+            {funnelStatic && <p>{funnelStatic.passed} </p>}
+            {!funnelStatic && <p>784</p>}
             <p>overall</p>
           </div>
         </div>

@@ -1,20 +1,32 @@
 import "../../style/SystemAdmin.scss";
 import OpenVacancies from "../openVacancies/OpenVacancies";
-
 import DataAllFetch from "../hooks/DataAllFetch";
+import { loginActions } from "../../components/store/loginSlice";
+import { useDispatch } from "react-redux";
+
+import { useNavigate } from "react-router-dom";
 
 const SystemAdmin = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   let url = "https://api.jampad.ml/api/hrs/";
 
   const userName: any = DataAllFetch(url);
-  console.log(userName);
+
+  const logoutHandler = () => {
+    dispatch(loginActions.logout());
+    navigate("/");
+  };
 
   return (
     <div className="systemAdmin">
       <div>
         <div className="systemAdmin__user">
-          <i className="bi bi-bell"></i>
-          <p>{`${userName.first_name} ${userName.last_name}`}</p>
+          <i className="bi bi-bell" onClick={logoutHandler}></i>
+          <p>
+            {!`${userName.first_name} ${userName.last_name}` || "Alex Smith"}
+          </p>
         </div>
         <div className="systemAdmin__title">
           <p>Vacancy</p>

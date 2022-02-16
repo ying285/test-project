@@ -3,15 +3,19 @@ import "../../style/SystemAdminDashbord.scss";
 import "../../style/Dashbord.scss";
 import { useSelector } from "react-redux";
 import { RootState } from "../../components/store/index";
+import DataAllFetch from "../hooks/DataAllFetch";
 
 const SystemAdminDashbord = () => {
   const showIcons = useSelector((state: RootState) => state.dashbord.showIcons);
+  let url = "https://api.jampad.ml/api/hrs/";
+
+  const userName: any = DataAllFetch(url);
 
   return (
     <div className="systemAdminDashbord">
       <div className="systemAdminDashbord__user">
         <i className="bi bi-bell"></i>
-        <p>Alex Smith</p>
+        <p>{!`${userName.first_name} ${userName.last_name}` || "Alex Smith"}</p>
       </div>
       <div className="systemAdminDashbord__title">
         <p>Vacancy</p>

@@ -1,4 +1,5 @@
 $primary-font-color: #939393;
+$sub-font-color: #c2c0c0;
 
 .progressStatis {
   height: 60%;
@@ -11,12 +12,13 @@ $primary-font-color: #939393;
 
   &__sub {
     width: 28%;
+    color: rgb(46, 46, 46);
 
     h5 {
       text-align: end;
       font-size: 1rem;
       margin-right: 0.9rem;
-      color: #c2c0c0;
+      color: $sub-font-color;
     }
 
     &__card {

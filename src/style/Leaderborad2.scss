@@ -1,0 +1,75 @@
+$primary-color: #fed614;
+$sub-font-color: #c2c0c0;
+
+.leaderboard2__items__detail {
+  display: flex;
+  margin-top: 0.8rem;
+  align-items: flex-start;
+  font-size: 0.9rem;
+  padding-left: 1rem;
+
+  p {
+    margin-right: 1rem;
+  }
+
+  &__span {
+    border-right: 1px solid $sub-font-color;
+    position: relative;
+    width: 8.5rem;
+
+    span:first-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__profile {
+      color: $sub-font-color;
+      position: absolute;
+      top: 0;
+      left: 12rem;
+      width: 100%;
+    }
+  }
+
+  &__line {
+    margin: -0.5rem 0 0 3.8rem;
+    border: 0;
+    height: 5px;
+    width: 18.5rem;
+    // background: linear-gradient(to right, #fdd301 80%, #c2c0c0 20%);
+  }
+}
+
+.leaderborad2__lin1 {
+  position: absolute;
+  top: 83%;
+  left: 91.5%;
+
+  path {
+    stroke-width: 5px;
+    stroke: $primary-color;
+  }
+}
+
+.leaderborad2__lin2 {
+  position: absolute;
+  top: 90%;
+  left: 91.5%;
+
+  path {
+    stroke-width: 2px;
+    stroke: $sub-font-color;
+  }
+}
+
+.leaderborad2__lin3 {
+  position: absolute;
+  top: 75%;
+  left: 91.5%;
+
+  path {
+    stroke-width: 2px;
+    stroke: $sub-font-color;
+  }
+}
