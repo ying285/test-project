@@ -15,7 +15,7 @@ $sub-font-color: #c2c0c0;
   &__span {
     border-right: 1px solid $sub-font-color;
     position: relative;
-    width: 8.5rem;
+    width: 9rem;
 
     span:first-child {
       position: absolute;
@@ -35,9 +35,8 @@ $sub-font-color: #c2c0c0;
   &__line {
     margin: -0.5rem 0 0 3.8rem;
     border: 0;
-    height: 5px;
+    height: 4px;
     width: 18.5rem;
-    // background: linear-gradient(to right, #fdd301 80%, #c2c0c0 20%);
   }
 }
 

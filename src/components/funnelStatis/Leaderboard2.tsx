@@ -24,10 +24,8 @@ export const Leaderboard2: React.FC<{
         className="leaderboard2__items__detail__line"
         style={{
           background:
-            `linear-gradient(to right, #fdd301 ${props.rate}%, #c2c0c0 (100-${props.rate})%
-            )`
-              ? `linear-gradient(to right, #fdd301 80%, #c2c0c0 20%)`
-              : "",
+            //`linear-gradient(to right, #fdd301 ${props.rate}%, #c2c0c0 (100-${props.rate} ))` ||
+            `linear-gradient(to right, #fdd301 ${props.rate}%, #c2c0c0 20%)`,
         }}
       ></div>
       <svg height="30" width="30" className="leaderborad2__lin1">
