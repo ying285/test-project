@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="nav">
       <div className="nav__logo">
         <h3>J</h3>
-        <span>Jampad</span>
+        <span>Junland</span>
       </div>
 
       <ul>
