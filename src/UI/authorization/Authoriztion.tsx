@@ -1,4 +1,3 @@
-import React, { Fragment } from "react";
 import AuthWelcome from "./AuthWelcome";
 import AuthMain from "./AuthMain";
 import "../../style/Authorization.scss";
